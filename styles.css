@@ -164,23 +164,67 @@ h1 strong{
     margin-bottom: 10px;
 }
 
+.event-set{
+    display:flex;
+
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+}
+
 .event{
-    /* margin: 10px 20px; */
+    margin:10px;
+    margin-bottom: 30px;
+    padding:10px;
+    display: block;
+    width:25%;
+
+    border-color: #000000;
+    border-radius: 10px;
+    border-style: solid;
 }
 
 .event-title{
-    margin: 15px;
+    margin: 20px;
     font-size: 50px;
+    text-align: center;
 }
 
 .event-image-container{
+    display: flex;
+    justify-content: center;
 
+    background-color: #363636;
+    margin:10px;
+    padding:20px;
+
+    border-color: #000000;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.event-image{
+    width: 220px;
+    height: 220px;
+    
+    /* width: 75% ;
+    height: 45%; */
+}
+.event-image-Inart{
+    width: 120px;
+    height: 220px;
 }
 
 .event-subtitle{
     margin: 10px;
     font-size: 30px;
 }
+
+.event-position{
+    margin: 10px;
+    font-size: 20px;
+}
+
 .event-description{
     margin: 10px;
     font-size: 25px;
@@ -192,6 +236,9 @@ h1 strong{
     text-decoration: none;
 }
 
+.event-elements{
+    font-size: 20px;
+}
 /* .form-email{
 
 } */
