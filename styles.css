@@ -44,9 +44,9 @@ ul{
 
 .header{
     background-color: #252525;
-    border-color: #000000;
+    /* border-color: #000000;
     border-radius: 10px;
-    border-style: solid;
+    border-style: solid; */
     height: 130px;
     color:white;
     display:flex;
@@ -67,7 +67,6 @@ ul{
     height: inherit;
     align-items: center;
 }
-
 
 .header-logo{
     margin-top: 10px;
@@ -98,16 +97,18 @@ ul{
 
 .hero
 {
-    height:400px;
-    width:99.6%;
-    background-color: #f0f0f0;
+    height:500px;
+    width:100%;
+    background-color: #292929e0;
     
+    /* width:99.6%;
     border-color: #121212;
     border-radius: 10px;
-    border-style: solid;
+    border-style: solid; */
+    
     
     /* width height */
-    background-size: 20% 90%;
+    /* background-size: 20% 90%; */
     /*
     background-image: url('images/Aldhair Vera.jpg');
     background-repeat: no-repeat;
@@ -116,12 +117,14 @@ ul{
  
     display: flex;
     align-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    justify-content: center;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
 }
 
 .hero-description{
-    color:#252525;
+    /* color:#252525; */
+    color:white;
     flex-shrink: 0;
 }
 
@@ -129,10 +132,12 @@ ul{
     /* flex-shrink: 0; */
     
     display: flex;
+    height: inherit;
+    width: inherit;
 
-    width: 100%;
+    /* width: 100%; */
     justify-content:flex-end;
-    align-content: center;
+    /* align-content: center; */
 
     /* border-color: #121212;
     border-radius: 10px;
@@ -149,12 +154,11 @@ ul{
     height: 350px;
 
     margin-right: 25px;
-
-    margin-top: 25px;
+    margin-top: 75px;
     /*margin-bottom: 5%; */
-    /* border-color: #121212;
+    border-color: #121212;
     border-radius: 10px;
-    border-style: solid; */
+    border-style: solid;
 }
 
 .portfolio{
@@ -164,8 +168,9 @@ ul{
     /* border-width: 1px; */
     border-radius: 10px;
     border-style: solid;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
 }
 
 .portfolio-title{
@@ -188,17 +193,22 @@ ul{
     border-bottom: 10px solid red;
     border-left: 10px solid red;
     border-right: 10px solid red; */
+    
+    /* border-width: 1px; */
     background-color: white;
     border-color: rgb(150, 150, 150);
-    /* border-width: 1px; */
     border-radius: 10px;
     border-style: solid;
     
     margin:10px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     padding:10px;
     display: block;
     /* border-top-left-radius: 50px; */
+}
+
+.project-description{
+    font-family: Kalam;
 }
 
 .project-title{
@@ -233,6 +243,11 @@ ul{
     border-style: solid;
 }
 
+#lazy-love{
+    width:200px;
+    height: 350px;
+}
+
 .events{
     width: 99.65%;
     background-color: #f0f0f0;
@@ -241,27 +256,34 @@ ul{
     border-radius: 10px;
     border-style: solid;
     
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
 }
 
 .event-set{
     display:flex;
-
     flex-wrap:wrap;
     justify-content: center;
     align-content: center;
 }
 
 .event{
-    margin:10px;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+
     padding:10px;
-    display: block;
-    width:25%;
+    /* width:25%; */
+    margin:50px;
+    margin-bottom: 30px;
 
-background-color: white;
+    width: 400px;
+    height: 600px;
 
+
+
+    background-color: white;
     border-color: #000000;
     border-radius: 10px;
     border-style: solid;
@@ -286,6 +308,12 @@ background-color: white;
     border-style: solid;
 }
 
+.event ol{
+    margin-left: 15px;
+    padding:15px;
+    list-style: decimal;
+}
+
 .event-image{
     width: 220px;
     height: 220px;
@@ -293,6 +321,7 @@ background-color: white;
     /* width: 75% ;
     height: 45%; */
 }
+
 .event-image-Inart{
     width: 120px;
     height: 220px;
@@ -300,27 +329,29 @@ background-color: white;
 
 .event-subtitle{
     margin: 10px;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .event-position{
     margin: 10px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .event-description{
     margin: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .event-url{
     margin: 10px;
     font-size: 20px;
     text-decoration: none;
+    color:red;
+    font-size: 25px;
 }
 
 .event-elements{
-    font-size: 20px;
+    font-size: 25px;
 }
 /* .form-email{
 
@@ -334,8 +365,8 @@ background-color: white;
     border-radius: 10px;
     border-style: solid;
 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
 }
 
 .contact-title{
@@ -360,16 +391,18 @@ background-color: white;
 .footer{
     display: flex;
     align-items: center;
+    /* justify-content: space-around; */
     justify-content: center;
 
+    background-color: #252525;
+    color:white;
     font-size: 25px;
     width: 99.65%;
     height: 100px;
-    background-color: #f0f0f0;
 
     border-color: #000000;
     border-radius: 10px;
     border-style: solid;
 
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
